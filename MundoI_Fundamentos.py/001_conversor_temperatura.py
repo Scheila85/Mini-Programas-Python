@@ -1,4 +1,4 @@
-# 014) Faça um programa que leia a temperatura em °C e tranforme em °F.
+#Faça um programa que leia a temperatura em °C e tranforme em °F.
 
 #Objetivo: ler temperatura em °C digitada pelo usuário e converter em °F.
 
