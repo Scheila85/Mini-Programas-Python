@@ -22,7 +22,5 @@ lista = frase.split()
 joined = "".join(lista)
 
 print(f"A letra '{escolhendo_letra}' aparece {joined.count(escolhendo_letra)} vezes.") 
-
 print(f"A letra '{escolhendo_letra}' aparece pela PRIMEIRA vez no caractere {joined.find(escolhendo_letra)+1}")
-
 print(f"A letra '{escolhendo_letra}' aparece pela ÚLTIMA vez no caractere {joined.rfind(escolhendo_letra)+1}.")
