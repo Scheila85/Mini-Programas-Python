@@ -1,4 +1,4 @@
-# 019 Um professor quer sortear um dos seus alunos para apagar o quadro. Faça um programa que leia 
+# Um professor quer sortear um dos seus alunos para apagar o quadro. Faça um programa que leia 
 # o nome dos quatro alunos e escreva o nome do escolhido.
 
 # Objetivo: 
