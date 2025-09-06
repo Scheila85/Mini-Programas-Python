@@ -1,10 +1,15 @@
-# 015) Faça um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de 
+# Faça um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de 
 # dias pelos quais ele foi alugado. Calcule o preço a pagar:
 # sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por km rodado.
 
-km_percorrido = float(input("Quantos km o carro percorreu? "))
+#Objetivo: 
+# ler quando km foram percorridos
+# ler quantidade de dias que o carro ficou alugado 
+# calcular o valor do aluguel
 
-quantidade_dias_alugado = int(input("Quantos dias o carro ficou alugado? "))
+km_percorrido = float(input("Quantos km foram percorridos? "))
+
+quantidade_dias_alugado = int(input("Por quantos dias o carro ficou alugado? "))
 preco_por_km = 0.15 * km_percorrido
 preco_por_dia = 60 * quantidade_dias_alugado
 
