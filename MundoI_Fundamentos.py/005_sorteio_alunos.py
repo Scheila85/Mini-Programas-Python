@@ -1,6 +1,10 @@
 # 019 Um professor quer sortear um dos seus alunos para apagar o quadro. Faça um programa que leia 
 # o nome dos quatro alunos e escreva o nome do escolhido.
 
+# Objetivo: 
+# perguntar o nome dos 4 alunos
+# sortear o escolhido 
+
 from random import choice
 
 nome_1 = input("Digite o nome do 1° aluno: ").strip().title()
