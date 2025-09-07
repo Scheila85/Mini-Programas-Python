@@ -1,4 +1,4 @@
-# 022 Crie um programa que leia o nome completo de uma pessoa e mostre:
+# Crie um programa que leia o nome completo de uma pessoa e mostre:
 # Nome com todas as letras maiusculas;
 # Nome com todas as letras minusculas;
 # Quantas letras ao todo sem considerar espaços;
