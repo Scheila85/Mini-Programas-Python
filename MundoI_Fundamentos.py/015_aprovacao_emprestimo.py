@@ -1,20 +1,22 @@
-# 036 Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa.
+# Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa.
 # O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar.
 # Calcule o valor da prestação mensal sabendo que ela não pode exceder 30% do salário, ou então
-# emprestimo será negado.
+# emprestimo será negado. 
+# Sem considerar juros.
 
 from time import sleep
+
 print("Olá, seja bem vindo! Está pronto para fazer a simulação do seu imóvel \ne realizar o sonho da casa própria?")
 valor_casa = float(input("Qual o valor da casa? R$").strip())
 salario = float(input("Qual o seu salário? R$").strip())
 tempo_pagamento = int(input("Em quantos anos você pretende pagar o seu financiamento? ").strip())
 
 salario_30_porcento = salario * (30/100)
-PRAZO_MAXIMO_FINANCIAMENTO = 35
+PRAZO_MAXIMO_FINANCIAMENTO = 35  # Determinei um prazo máximo de financiamento
 prestacao = valor_casa / (tempo_pagamento*12)
 
 print("Processando...")
-sleep(3)
+sleep(2)
 if tempo_pagamento > PRAZO_MAXIMO_FINANCIAMENTO or prestacao > salario_30_porcento:
     print("Empréstimo negado!")
     if tempo_pagamento > PRAZO_MAXIMO_FINANCIAMENTO:
