@@ -2,8 +2,11 @@
 
 from datetime import date
 from time import sleep
+
 ano = int(input("Digite um ano qualquer para saber se ele é bissexto. \nOu digite 0 se quiser saber o ano atual: ").strip())
+
 sleep(2)
+
 if ano == 0:
     ano = date.today().year
 
