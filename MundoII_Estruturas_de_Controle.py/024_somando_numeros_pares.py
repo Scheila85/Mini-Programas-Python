@@ -12,10 +12,9 @@ for numero in numeros:
     entrada = int(input(f"Digite o {numero}: "))
     if entrada % 2 == 0:
         soma += entrada
-        contador += 1  #implementei Guanabara
+        contador += 1  
     else:
-        impares_desconsiderados.append(entrada)  #Tinha somado, mas estava errado. 
-#Este é o método quando quero adicionar valores em uma lista vazia.
+        impares_desconsiderados.append(entrada)  
 
 print(f"Os números ímpares {impares_desconsiderados} digitados foram desconsiderados.")
 print(f"Você digitou {contador} números par (es) e a soma é: {soma}.")
