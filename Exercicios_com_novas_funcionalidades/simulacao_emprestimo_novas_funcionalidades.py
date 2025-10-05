@@ -12,7 +12,7 @@ cor = {"verde": "\033[32m",
     "limpa": "\033[m"}
 
 while True: 
-    print("Olá, seja bem vindo! Está pronto para fazer a simulação do seu imóvel \ne realizar o sonho da casa própria?")
+    print("Olá, seja bem vindo! Está pronto para fazer a simulação do seu imóvel e realizar o sonho da casa própria?")
     valor_casa = float(input("Qual o valor da casa? R$").strip())
     salario = float(input("Qual o seu salário? R$").strip())
     tempo_pagamento = int(input("Em quantos anos você pretende quitar o financiamento? ").strip())
@@ -23,7 +23,7 @@ while True:
     print("Processando...")
     sleep(2)
     if tempo_pagamento > PRAZO_MAXIMO_FINANCIAMENTO or prestacao > salario_30_porcento:
-        print(f"{cor['vermelho']}Empréstimo negado!{cor['limpa']}")
+        print(f"{cor['vermelho']}Financiamento negado!{cor['limpa']}")
         if tempo_pagamento > PRAZO_MAXIMO_FINANCIAMENTO:
             print(f"Tempo de financiamento ({cor['vermelho']}{tempo_pagamento} anos{cor['limpa']}) excede o prazo máximo de financiamento {cor['vermelho']}(35 anos){cor['limpa']}.")
         if prestacao > salario_30_porcento: 
