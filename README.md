@@ -25,7 +25,7 @@ Cada pasta contém arquivos `.py` com:
 - 💬 Alguns comentários
 
 ## Tecnologias utilizadas
-- Python3.x
+- Python 3.13.2
 - Git e GitHub
   
 **Link repositório:** https://github.com/Scheila85/Mini-Programas-Python/tree/main
