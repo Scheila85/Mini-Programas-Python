@@ -7,13 +7,15 @@
 from time import sleep
 
 PRAZO_MAXIMO_FINANCIAMENTO = 35 
-
+cor = {"verde": "\033[32m",
+    "vermelho":"\033[31m",
+    "limpa": "\033[m"}
 
 while True: 
     print("Olá, seja bem vindo! Está pronto para fazer a simulação do seu imóvel \ne realizar o sonho da casa própria?")
     valor_casa = float(input("Qual o valor da casa? R$").strip())
     salario = float(input("Qual o seu salário? R$").strip())
-    tempo_pagamento = int(input("Em quantos anos você pretende pagar o seu financiamento? ").strip())
+    tempo_pagamento = int(input("Em quantos anos você pretende quitar o financiamento? ").strip())
 
     salario_30_porcento = salario * (30/100)
     prestacao = valor_casa / (tempo_pagamento*12)
@@ -21,15 +23,15 @@ while True:
     print("Processando...")
     sleep(2)
     if tempo_pagamento > PRAZO_MAXIMO_FINANCIAMENTO or prestacao > salario_30_porcento:
-        print("Empréstimo negado!")
+        print(f"{cor['vermelho']}Empréstimo negado!{cor['limpa']}")
         if tempo_pagamento > PRAZO_MAXIMO_FINANCIAMENTO:
-            print(f"Tempo de financiamento ({tempo_pagamento} anos) escolhido excede o prazo maximo de financiamento (35 anos).")
+            print(f"Tempo de financiamento ({cor['vermelho']}{tempo_pagamento} anos{cor['limpa']}) excede o prazo máximo de financiamento {cor['vermelho']}(35 anos){cor['limpa']}.")
         if prestacao > salario_30_porcento: 
-            print(f"O valor da prestação (R${prestacao:.2f}) excede 30% (R${salario_30_porcento:.2f}) do seu salário.")
+            print(f"O valor da prestação ({cor['vermelho']}R${prestacao:.2f}{cor['limpa']}) excede 30% ({cor['vermelho']}R${salario_30_porcento:.2f}{cor['limpa']}) do seu salário.")
     else: 
-        print("Financiamento aceito!")
+        print(f"{cor['verde']}Financiamento aceito!{cor['limpa']}")
         print("Parabéns! Você está prestes a realizar o sonho da casa própria!")
-        print(f"Para pagar uma casa de R${valor_casa:.2f} em {tempo_pagamento} anos, o valor da parcela será R${prestacao:.2f}.")
+        print(f"Para pagar uma casa de {cor['verde']}R${valor_casa:.2f}{cor['limpa']} em {cor['verde']}{tempo_pagamento} anos{cor['limpa']}, o valor da parcela será {cor['verde']}R${prestacao:.2f}{cor['limpa']}.")
     continuacao = input("Deseja realizar outras simulaçoes? [S/N] ").strip().upper()
     while continuacao not in "SN":
         continuacao = input("Deseja realizar outras simulaçoes? [S/N] ").strip().upper()
