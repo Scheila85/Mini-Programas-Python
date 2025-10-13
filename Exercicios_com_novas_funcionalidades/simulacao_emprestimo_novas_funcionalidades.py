@@ -32,8 +32,8 @@ while True:
         print(f"{cor['verde']}Financiamento aceito!{cor['limpa']}")
         print("Parabéns! Você está prestes a realizar o sonho da casa própria!")
         print(f"Para pagar uma casa de {cor['verde']}R${valor_casa:.2f}{cor['limpa']} em {cor['verde']}{tempo_pagamento} anos{cor['limpa']}, o valor da parcela será {cor['verde']}R${prestacao:.2f}{cor['limpa']}.")
-    continuacao = input("Deseja realizar outras simulaçoes? [S/N] ").strip().upper()
+    continuacao = input("Deseja realizar outras simulaçoes? [S/N] ").strip().upper()[0]
     while continuacao not in "SN":
-        continuacao = input("Deseja realizar outras simulaçoes? [S/N] ").strip().upper()
+        continuacao = input("Deseja realizar outras simulaçoes? [S/N] ").strip().upper()[0]
     if continuacao == "N":
         break
